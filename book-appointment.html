@@ -45,13 +45,49 @@
             </div>
           </div>
         </div>
-      </nav>
+    </div>
+    </nav>
     </div>
     <div class="nav-divider"></div>
   </header>
-  <div class="banner">
+  <div class="banner book">
     <h2 class="hero__title">Book Appointment</h2>
-    <p>ReAbility: providing online and in person osteopathic pain relief and rehabilitation</p>
+  </div>
+  <div class="wrapper">
+    <div class="what-to-expect text-wrapper">
+      <details>
+      <summary>What to expect from an online consultation</summary>
+      <p>Each consultation will involve you telling me about your problem and how it is affecting you, as well as me
+        asking questions about you, and your life. Somewhere private, with a good internet signal works best.</p>
+      <p>I may need to see you moving or get you to press into different areas of your body. Is there somewhere you
+        can put your device, so that your hands are free, and the camera can see the relevant part of you moving?</p>
+      <p>I am here to answer your questions and to help you understand what is normal for your situation and what can
+        be done to help.</p>
+      <p>We can then discuss strategies for self care and come up with a plan. This may involve exercises, stretches
+        or other ways to change what is happening to you. We may be able to record you doing these during the
+        consultation, or I can send videos or an email explanation afterwards.</p>
+      <p>Included in the initial consultation fee is a free follow up, a few days later, to check how you are doing
+        and answer any questions that may have come up. Depending on your situation, one appointment might be enough
+        for a few weeks, or we might need another appointment in 1-2 weeks.</p>
+      <p>Osteopaths are mostly known for treating back pains, however we can treat pain in any joint of the body. I
+        have recently become fascinated with treating painful shoulders.</p>
+      <p>Whether your issue is new or has been with you for a while, feel free to book now.</p>
+    </details>
+
+    <details>
+      <summary>If you live near Prestwick you can come and see me at the Carrick Clinic.</summary>
+      <p>As with the online consultations this will involve you telling me about your problem and how it is affecting
+        you, as well as me asking questions about you, and your life.</p>
+      <p>Then I will ask you to do some movements and assess areas of concern.</p>
+      <p>I am here to answer your questions and to help you understand what is normal for your situation and what can
+        be done to help.</p>
+      <p>We can then discuss strategies for self care and come up with a plan. This may involve exercises, stretches
+        or other ways to change what is happening to you. There is normally some hands on treatment.</p>
+      <p>Book using the form below or ring 01292 478 888</p>
+    </details>
+    </div>
+    
+
     <iframe id='cliniko-71214755' src='https://michael-rolls.cliniko.com/bookings?embedded=true' frameborder='0'
       scrolling='auto' width='100%' height='1000' style='pointer-events: auto;'></iframe>
   </div>
@@ -61,19 +97,20 @@
     <a href="#">Built by Rushlet</a>
   </footer>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/boilerplate-defaults.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="./js/main.js"></script>
-    <script type='text/javascript'>
-      window.addEventListener('message', function handleIFrameMessage(e) {
-        var clinikoBookings = document.getElementById('cliniko-71214755');
-        if (typeof e.data !== 'string') return;
-        if (e.data.search('cliniko-bookings-resize') > -1) {
-          var height = Number(e.data.split(':')[1]);
-          clinikoBookings.style.height = height + 'px';
-        }
-        e.data.search('cliniko-bookings-page') > -1 && clinikoBookings.scrollIntoView();
-      });
-    </script>
-  </html>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/boilerplate-defaults.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="./js/main.js"></script>
+  <script type='text/javascript'>
+    window.addEventListener('message', function handleIFrameMessage(e) {
+      var clinikoBookings = document.getElementById('cliniko-71214755');
+      if (typeof e.data !== 'string') return;
+      if (e.data.search('cliniko-bookings-resize') > -1) {
+        var height = Number(e.data.split(':')[1]);
+        clinikoBookings.style.height = height + 'px';
+      }
+      e.data.search('cliniko-bookings-page') > -1 && clinikoBookings.scrollIntoView();
+    });
+  </script>
+
+</html>

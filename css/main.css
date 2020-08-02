@@ -121,9 +121,11 @@ p {
 .banner {
     padding: 1rem;
     background-color: #f2f2f2;
+    margin-bottom: 1rem;
 }
 
-.banner.about {
+.banner.about,
+.banner.book {
     padding: 1rem;
     background-color: #EAC455;
 }
@@ -269,8 +271,19 @@ footer {
 
 /* Booking styling */
 
+.what-to-expect {
+    margin: 2rem auto;
+}
+
+.what-to-expect details summary {
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 #cliniko-71214755 {
     max-width: 800px;
     margin: auto;
     display: block;
 }
+
