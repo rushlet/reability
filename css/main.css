@@ -269,6 +269,11 @@ footer {
     font-size: 1rem;
 }
 
+.embed-video {
+    margin: auto;
+    display: block;
+}
+
 /* Booking styling */
 
 .what-to-expect {
