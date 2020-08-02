@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Roboto&family=Roboto+Slab:wght@100;400;700&display=swap');
 
 body {
-    background-color: #f2f2f2;
+    background-color: #fff;
     color: #1E283A;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
@@ -59,6 +59,7 @@ ul.navbar-nav {
     list-style-type: none;
     margin: 0.25rem;
     flex: 1 1 100%;
+    cursor: pointer;
 }
 
 @media all and (min-width: 480px) {
@@ -115,6 +116,16 @@ p {
 
 .wrapper {
     padding: 1rem;
+}
+
+.banner {
+    padding: 1rem;
+    background-color: #f2f2f2;
+}
+
+.banner.about {
+    padding: 1rem;
+    background-color: #EAC455;
 }
 
 h1,
@@ -218,15 +229,20 @@ img {
 }
 
 footer {
-    background-color: #fff;
+    background-color: #f2f2f2;
     width: 100vw;
     padding-top: 1rem;
     bottom: 0;
 }
 
+.subtitle {
+    margin-top: 3rem;
+    text-align: center;
+}
+
 /* FAQs */
 
-.FAQ {
+.main {
     background-color: #fff;
     padding: 1rem;
     margin-top: 3rem;
