@@ -250,3 +250,11 @@ footer {
     margin: 1rem auto;
     font-size: 1rem;
 }
+
+/* Booking styling */
+
+#cliniko-71214755 {
+    max-width: 800px;
+    margin: auto;
+    display: block;
+}
