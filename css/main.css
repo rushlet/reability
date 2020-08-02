@@ -118,7 +118,8 @@ p {
     padding: 1rem;
 }
 
-.banner {
+.banner,
+.home #hero {
     padding: 1rem;
     background-color: #f2f2f2;
     margin-bottom: 1rem;
@@ -126,8 +127,13 @@ p {
 
 .banner.about,
 .banner.book {
-    padding: 1rem;
     background-color: #EAC455;
+}
+
+.banner.shoulder,
+.banner.back {
+    background-color: #7893C4;
+    color: #1E283A;
 }
 
 h1,
