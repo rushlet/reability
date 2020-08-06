@@ -21,10 +21,17 @@ header {
 .navbar-brand {
     text-align: center;
     margin-top: 0;
+    display: grid;
 }
 
-.navbar-brand a {
-    color: #323C4C;
+.navbar-brand  {
+    position: absolute;
+    top: -100px;
+    opacity: 0;
+}
+
+.navbar-brand--img  {
+    margin-bottom: 1rem;
 }
 
 .navbar {
@@ -32,16 +39,16 @@ header {
 }
 
 .navbar-collapse {
-    position: absolute;
     background-color: #fff;
     padding: 1rem;
     width: 100%;
     max-height: 180px;
     overflow: hidden;
     transition-property: all;
-    transition-duration: .5s;
-    transition-timing-function: cubic-bezier(0.5, 1, 0.5, 1);
+    transition-duration: .75s;
+    transition-timing-function: ease-in-out;
     z-index: 1;
+    position: absolute;
 }
 
 .navbar-collapse.collapse {
@@ -98,6 +105,7 @@ ul.navbar-nav {
     top: 0;
     bottom: 0;
     left: 0.5rem;
+    cursor: pointer;
 }
 
 .nav-divider {
@@ -255,18 +263,27 @@ footer {
 footer ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     padding: 0;
     margin: 0;
+    flex-direction: column;
+    text-align: center;
 }
 
-footer ul li {
+footer li {
     list-style-type: none;
     margin: 0.25rem 0;
 }
 
 footer ul li a {
     color: #323C4C;
+}
+
+@media all and (min-width: 480px) {
+    footer ul {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-evenly;
+    }
 }
 
 .subtitle {
@@ -305,6 +322,8 @@ footer ul li a {
 .embed-video {
     margin: auto;
     display: block;
+    max-width: 640px;
+    width: 100%;
 }
 
 /* Booking styling */
@@ -317,6 +336,10 @@ footer ul li a {
     margin: 1rem auto;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+details summary {
+    cursor: pointer;
 }
 
 #cliniko-71214755 {
