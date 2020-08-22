@@ -447,6 +447,10 @@ details summary {
 
 /* privacy policy */
 
+.privacy-policy {
+    font-size: 0.875rem;
+}
+
 .privacy-list-heading {
     font-weight: bold;
     display: block;
