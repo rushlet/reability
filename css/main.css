@@ -345,24 +345,32 @@ footer ul li a {
     width: 100%;
 }
 
-.mri_table {
-    border-spacing: 0;
+.table-container {
+    overflow-x: scroll;
+    width: 100%;
 }
 
-.mri_table caption {
+.mri_table {
+    border-spacing: 5px;
+    border-collapse: collapse;
+    max-width: 100%;
+}
+
+.caption {
     font-size: 0.925rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .mri_table thead {
     font-weight: bold;
     font-size: 0.85rem;
-    border-bottom: solid 2px rgba(221, 221, 221, 0.5);
 }
 
 .mri_table th {
-    border-bottom: solid 4px #ddd;
+    border-bottom: solid 3px #ddd;
+    background-color: #fff;
 }
 
 .mri_table td {
@@ -371,16 +379,44 @@ footer ul li a {
 
 .mri_table th,
 .mri_table td {
-    width: calc(100% / 7);
+    width: calc(100% / 3);
+    min-width: 2.5rem;
+    padding: 0.25rem 0.5rem;
+}
+
+@media (min-width: 750px) {
+    .mri_table th,
+    .mri_table td {
+        width: calc(100% / 7);
+    }
 }
 
 tr:nth-child(even) {
-    background: rgba(221, 221, 221, 0.5);
+    background: rgb(240, 240, 240);
 }
 
-/* tr:nth-child(odd) {
+tr:nth-child(odd) {
     background: #FFF
-} */
+}
+
+.column__age {
+    left: 0;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: -webkit-sticky;
+    position: sticky;
+    box-shadow: 3px 0 0 0 #ddd;
+}
+
+tr:nth-child(even) td.column__age {
+    background: rgb(240, 240, 240);
+}
+
+tr:nth-child(odd) td.column__age {
+    background: #fff;
+}
+
 
 /* Booking styling */
 
