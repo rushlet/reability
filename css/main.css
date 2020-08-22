@@ -466,3 +466,10 @@ details summary {
 .privacy-policy li {
     margin: 1rem auto;
 }
+
+@media (max-width: 750px) {
+    .wrapper.contact,
+    .wrapper.contact .main {
+        padding: 0;
+    }
+}
