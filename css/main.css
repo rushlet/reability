@@ -345,6 +345,43 @@ footer ul li a {
     width: 100%;
 }
 
+.mri_table {
+    border-spacing: 0;
+}
+
+.mri_table caption {
+    font-size: 0.925rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.mri_table thead {
+    font-weight: bold;
+    font-size: 0.85rem;
+    border-bottom: solid 2px rgba(221, 221, 221, 0.5);
+}
+
+.mri_table th {
+    border-bottom: solid 4px #ddd;
+}
+
+.mri_table td {
+    text-align: right;
+}
+
+.mri_table th,
+.mri_table td {
+    width: calc(100% / 7);
+}
+
+tr:nth-child(even) {
+    background: rgba(221, 221, 221, 0.5);
+}
+
+/* tr:nth-child(odd) {
+    background: #FFF
+} */
+
 /* Booking styling */
 
 .what-to-expect {
